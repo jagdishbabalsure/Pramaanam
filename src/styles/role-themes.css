@@ -1,0 +1,115 @@
+/* Rail Metro Theme - Blue Colors for All Rail Metro Roles */
+
+.rail-metro-theme {
+  --primary-color: #2563eb;
+  --primary-light: #dbeafe;
+  --primary-dark: #1d4ed8;
+  --accent-color: #3b82f6;
+  --accent-light: #e0f2fe;
+  --secondary-color: #0ea5e9;
+  --secondary-light: #f0f9ff;
+  --success-color: #10b981;
+  --warning-color: #f59e0b;
+  --error-color: #ef4444;
+  --background: #f8fafc;
+  --surface: #ffffff;
+  --text-primary: #1e293b;
+  --text-secondary: #64748b;
+  --border-color: #e2e8f0;
+}
+
+/* Water Metro Theme - Teal Colors for Water Metro */
+
+.water-metro-theme {
+  --primary-color: #0d9488;
+  --primary-light: #ccfbf1;
+  --primary-dark: #0f766e;
+  --accent-color: #14b8a6;
+  --accent-light: #f0fdfa;
+  --secondary-color: #5eead4;
+  --secondary-light: #f0fdfa;
+  --success-color: #10b981;
+  --warning-color: #f59e0b;
+  --error-color: #ef4444;
+  --background: #f0fdfa;
+  --surface: #ffffff;
+  --text-primary: #134e4a;
+  --text-secondary: #6b7280;
+  --border-color: #a7f3d0;
+}
+
+/* Global role theme application - Unified Green Theme */
+.role-themed {
+  background-color: var(--background);
+  color: var(--text-primary);
+}
+
+.role-themed .card {
+  background-color: var(--surface);
+  border-color: var(--border-color);
+}
+
+.role-themed .sidebar {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.role-themed .sidebar-item:hover {
+  background-color: var(--primary-dark);
+}
+
+.role-themed .primary-button {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.role-themed .primary-button:hover {
+  background-color: var(--primary-dark);
+}
+
+.role-themed .accent-button {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+.role-themed .accent-button:hover {
+  background-color: var(--primary-dark);
+}
+
+.role-themed .status-excellent {
+  background-color: var(--success-color);
+  color: white;
+}
+
+.role-themed .status-good {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+.role-themed .status-needs-attention {
+  background-color: var(--warning-color);
+  color: white;
+}
+
+.role-themed .status-critical {
+  background-color: var(--error-color);
+  color: white;
+}
+
+/* Additional unified styling for consistency */
+.role-themed .metric-card {
+  border-left-color: var(--primary-color);
+}
+
+.role-themed .role-card {
+  border-left-color: var(--primary-color);
+}
+
+.role-themed .header-brand {
+  background-color: var(--primary-color);
+}
+
+.role-themed .profile-section {
+  background-color: var(--primary-light);
+  border-color: var(--primary-color);
+}
