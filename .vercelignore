@@ -1,0 +1,19 @@
+# Server files (not needed for frontend deployment)
+server/
+
+# Test files
+test-*.html
+*.bat
+
+# Scripts
+start-servers.js
+
+# Documentation
+IMPLEMENTATION_SUMMARY.md
+README-QUICK-START.md
+
+# Specs
+.kiro/
+
+# Node modules (already ignored by default)
+node_modules/
