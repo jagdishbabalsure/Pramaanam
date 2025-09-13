@@ -4,11 +4,12 @@ import { Button } from '../ui/button';
 import { Progress } from '../ui/progress';
 import { RoleCard } from '../cards/RoleCard';
 import { MetricCard } from '../cards/MetricCard';
-import { 
-  Train, 
-  Users, 
-  DollarSign, 
-  Shield, 
+import { FileUploadSummary } from '../FileUploadSummary';
+import {
+  Train,
+  Users,
+  DollarSign,
+  Shield,
   Wrench,
   TrendingUp,
   TrendingDown,
@@ -32,6 +33,7 @@ const translations = {
     complianceTracker: 'Compliance Tracker',
     dailyOverview: 'Daily Operational Overview',
     crossDepartment: 'Cross-Department Insights',
+    documentAnalysis: 'Document Analysis',
     operations: 'Operations',
     safety: 'Safety & Security',
     finance: 'Finance',
@@ -47,6 +49,7 @@ const translations = {
     complianceTracker: 'കംപ്ലയൻസ് ട്രാക്കർ',
     dailyOverview: 'ദൈനംദിന പ്രവർത്തന അവലോകനം',
     crossDepartment: 'ക്രോസ്-ഡിപ്പാർട്ട്മെന്റ് ഇൻസൈറ്റുകൾ',
+    documentAnalysis: 'ഡോക്യുമെന്റ് വിശകലനം',
     operations: 'പ്രവർത്തനങ്ങൾ',
     safety: 'സുരക്ഷ & സുരക്ഷാ',
     finance: 'ധനകാര്യം',
@@ -244,6 +247,12 @@ export function EnhancedOperationsDashboard({ language }: EnhancedOperationsDash
             </div>
           </RoleCard>
         </div>
+      </div>
+
+      {/* Document Analysis Section */}
+      <div className="space-y-4">
+        <h2 className="text-xl font-semibold" style={{ color: 'var(--text-primary)' }}>{t.documentAnalysis}</h2>
+        <FileUploadSummary language={language} />
       </div>
 
       {/* Cross-Department Insights Section */}
